@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaFastFood — Professional FastFood Online Shop</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-burger"></i> Meta<span>FastFood</span>
+            </a>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Bosh sahifa</a></li>
+                    <li><a href="#menu" class="nav-link">Menyu</a></li>
+                    <li><a href="#about" class="nav-link">Biz haqimizda</a></li>
+                    <li><a href="#specials" class="nav-link">Aksiyalar</a></li>
+                    <li><a href="#contact" class="nav-link">Aloqa</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="cart-btn" class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </button>
+                <a href="#menu" class="btn btn-primary order-top-btn">Buyurtma berish</a>
+                <div class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Eng mazali va tezkor</span>
+                <h1>Mazali Burgerlar va Istalgan FastFood <span>MetaFastFood</span>da!</h1>
+                <p>Sifatli masalliqlar, o‘ziga xos retseptlar va issiqqina yetkazib berish xizmati. Bugunoq o‘z sevimli taomingizga buyurtma bering!</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Hozir buyurtma berish</a>
+                    <a href="#menu" class="btn btn-outline">Menyuni ko‘rish</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Delicious Burger" onerror="this.src='https://via.placeholder.com/500?text=MetaFastFood'">
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIALS / AKSIYALAR SECTION -->
+    <section id="specials" class="specials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Maxsus <span>Aksiyalar</span> va Chegirmalar</h2>
+                <p>Hamyonbop narxlardagi maxsus takliflarimizni boy bermang!</p>
+            </div>
+            <div class="specials-grid" id="specials-grid">
+                <!-- JavaScript orqali to'ldiriladi -->
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Bizning <span>Menyu</span></h2>
+                <p>O‘zingizga yoqqan turdagi mazali taomlarni tanlang</p>
+            </div>
+
+            <!-- SEARCH & FILTERS -->
+            <div class="filter-search-container">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search-input" placeholder="Mahsulotlarni qidirish...">
+                </div>
+                <div class="category-filters" id="category-filters">
+                    <button class="filter-btn active" data-category="all">Barchasi</button>
+                    <button class="filter-btn" data-category="burger">Burgerlar</button>
+                    <button class="filter-btn" data-category="pizza">Pitsalar</button>
+                    <button class="filter-btn" data-category="fastfood">Fastfood</button>
+                    <button class="filter-btn" data-category="drink">Ichimliklar</button>
+                </div>
+            </div>
+
+            <!-- PRODUCTS GRID -->
+            <div class="products-grid" id="products-grid">
+                <!-- JavaScript orqali 20 ta mahsulot yuklanadi -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="MetaFastFood Restoran" onerror="this.src='https://via.placeholder.com/500?text=MetaFastFood'">
+            </div>
+            <div class="about-content">
+                <span class="badge">Biz haqimizda</span>
+                <h2>Sifat va Tejamkorlik uyg‘unligi — <span>MetaFastFood</span></h2>
+                <p>Biz mijozlarimizga har doim eng yangi, yuqori sifatli va ishonchli masalliqlardan tayyorlangan taomlarni taqdim etamiz. Professional oshpazlar jamoamiz har bir buyurtmani mehr bilan tayyorlaydi.</p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-bolt"></i>
+                        <div>
+                            <h4>Tez yetkazib berish</h4>
+                            <p>Issiq holatda 30 daqiqa ichida eshigingizgacha.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <h4>Sifatli mahsulotlar</h4>
+                            <p>Faqatgina halol va yangi masalliqlar.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-headset"></i>
+                        <div>
+                            <h4>24/7 Qo‘llab-quvvatlash</h4>
+                            <p>Mijozlar uchun doimiy xizmat ko‘rsatish.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS / MIJOZLAR FIKRLARI -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mijozlarimiz <span>Nima Deydi?</span></h2>
+                <p>Bizning xizmatimizdan foydalangan doimiy mijozlarimizning fikrlari</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Classic Burger haqiqatan ham mazali ekan! Hajmini tanlab buyurtma berish juda qulay. Yetkazib berish ham vaqtida keldi."</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Client">
+                        <div>
+                            <h4>Malika Karimova</h4>
+                            <span>Doimiy mijoz</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"MetaFastFood sayti juda zamonaviy ishlaydi. Lavash va pitsa ajoyib ta'mga ega. Hammaga tavsiya qilaman!"</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Client">
+                        <div>
+                            <h4>Jasurbek Tursunov</h4>
+                            <span>Dasturchi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-burger"></i> Meta<span>FastFood</span>
+                </a>
+                <p>Eng sara fastfood taomlari manzili. O'zingiz va yaqinlaringiz uchun mazali taomlar tanlang.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Tezkor havolalar</h3>
+                <ul>
+                    <li><a href="#hero">Bosh sahifa</a></li>
+                    <li><a href="#menu">Menyu</a></li>
+                    <li><a href="#about">Biz haqimizda</a></li>
+                    <li><a href="#specials">Aksiyalar</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Bog‘lanish</h3>
+                <p><i class="fa-solid fa-phone"></i> +998 (71) 200-00-00</p>
+                <p><i class="fa-solid fa-location-dot"></i> Toshkent sh., Amir Temur ko'chasi 1-uy</p>
+                <p><i class="fa-solid fa-clock"></i> Har kuni: 09:00 - 03:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MetaFastFood. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <!-- SHOPPING CART MODAL -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Sizning Savatchangiz</h3>
+                <button id="close-cart" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="cart-body" id="cart-items-container">
+                <!-- Dinamik elementlar -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Umumiy summa:</span>
+                    <span id="cart-total-price">0 so'm</span>
+                </div>
+                <button id="checkout-btn" class="btn btn-primary btn-block">Buyurtma berish</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="checkout-modal" id="checkout-modal">
+        <div class="checkout-content">
+            <div class="checkout-header">
+                <h3>MetaFastFood — Buyurtmani Rasmiylashtirish</h3>
+                <button id="close-checkout" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label>Ism va familiya *</label>
+                    <input type="text" id="cust-name" placeholder="Masalan: Alisher Valiyev" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefon raqami *</label>
+                    <input type="tel" id="cust-phone" placeholder="+998 90 123 45 67" required>
+                </div>
+                <div class="form-group">
+                    <label>Yetkazib berish manzili *</label>
+                    <textarea id="cust-address" placeholder="Ko'cha, uy raqami, mo'ljal..." rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Qo'shimcha izoh</label>
+                    <textarea id="cust-note" placeholder="Masalan: Eshik qo'ng'irog'i ishlamaydi..." rows="2"></textarea>
+                </div>
+                <div class="checkout-summary">
+                    <p>Jami to'lov: <strong id="checkout-total-price">0 so'm</strong></p>
+                    <small>Izoh: Backend mavjud emasligi sababli, buyurtma frontend sinov rejimida muvaffaqiyatli qabul qilinadi.</small>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Buyurtmani tasdiqlash</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- DETAIL MODAL -->
+    <div class="detail-modal" id="detail-modal">
+        <div class="detail-content" id="detail-modal-body">
+            <!-- Dinamik tafsilotlar -->
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast" class="toast">Mahsulot savatchaga qo'shildi!</div>
+
+    <!-- Custom JS -->
+    <script src="./app.js"></script>
+</body>
+</html>
